@@ -4,150 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devendra's Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      text-align: center;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
-      padding: 20px;
-      position: sticky;
-      top: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    header img {
-      height: 120px;
-      border-radius: 100%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      border: 4px solid white;
-    }
-
-    nav {
-      text-align: center;
-      margin: 20px 0;
-      position: sticky;
-      top: 329px;
-      background-color: white;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #007BFF;
-    }
-
-    section {
-      padding: 20px;
-      margin: 0 5%;
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-
-    th, td {
-      padding: 8px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #007BFF;
-      color: white;
-    }
-
-    tbody tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-
-    form {
-      max-width: 400px;
-      margin: auto;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      border-radius: 12px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      background-color: #007BFF;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #4facfe;
-      color: white;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        position: static;
-      }
-      section {
-        margin: 10px;
-      }
-      header img {
-        height: 80px;
-      }
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans bg-gray-100 leading-relaxed">
 
-  <header>
+  <header class="text-center bg-gradient-to-r from-blue-400 to-cyan-400 text-white p-6 sticky top-0 shadow-lg">
     <h1>Devendra Singh</h1>
     <p>Hello, I'm a Software Engineer</p>
-    <img src="hand-drawn-web-developers_23-2148819604.avif" alt="Profile Picture" />
+    <img src="hand-drawn-web-developers_23-2148819604.avif" alt="Profile Picture" class="h-32 rounded-full shadow-lg border-4 border-white mx-auto" />
   </header>
 
   <main>
-    <nav>
-      <a href="https://github.com/GitDevendra">GitHub</a>
-      <a href="www.linkedin.com/in/devendrasingh01">LinkedIn</a>
-      <a href="https://leetcode.com/u/GitDevendra/">LeetCode</a>
-      <a href="https://codeforces.com/profile/Devendra_Singh_18">Codeforces</a>
-      <hr>
-    </nav>
+  <nav class="fixed left-0 w-full text-center bg-white shadow-md py-3 z-50">
+    <a href="https://github.com/GitDevendra" class="mx-4 font-bold text-gray-700 hover:text-blue-600 transition">GitHub</a>
+    <a href="https://www.linkedin.com/in/devendrasingh01" class="mx-4 font-bold text-gray-700 hover:text-blue-600 transition">LinkedIn</a>
+    <a href="https://leetcode.com/u/GitDevendra/" class="mx-4 font-bold text-gray-700 hover:text-blue-600 transition">LeetCode</a>
+    <a href="https://codeforces.com/profile/Devendra_Singh_18" class="mx-4 font-bold text-gray-700 hover:text-blue-600 transition">Codeforces</a>
+  </nav>
+  
+  <!-- Add padding so content doesn't hide behind navbar -->
+  <div class="pt-16"></div>
 
     
 
-    <section>
+    <section class="p-6 mx-5 bg-white rounded-xl shadow-md mb-8">
       <h2>Skills</h2>
       <ul>
         <li><strong>Programming:</strong> Java, Python, C++, C</li>
@@ -157,84 +37,93 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ol type="I">
-        <li><strong>STUDENT MANAGEMENT SYSTEM</strong> (Jan 2023 – Mar 2023)
-          <ul>
-            <li>Automated student data management using Python.</li>
-            <li>Implemented student registration, update, delete, and search functionalities.</li>
-            <li>Added attendance tracking and grade analysis modules.</li>
-          </ul>
-        </li>
-        <li><strong>HOUSING PRICE PREDICTION</strong> (Jan 2024 – Feb 2024)
-          <ul>
-            <li>Used regression models (Linear, Lasso, Ridge, XGBoost) for price prediction.</li>
-            <li>Handled missing values, outliers, and performed EDA.</li>
-            <li>Visualized results using Matplotlib and Seaborn.</li>
-          </ul>
-        </li>
-        <li><strong>STOCK PREDICTOR – MACHINE LEARNING FORECASTING</strong> (Feb 2024 – Present)
-          <ul>
-            <li>Forecasting stock prices using ML and time series analysis.</li>
-            <li>Working on data preprocessing and trend analysis.</li>
-          </ul>
-        </li>
-      </ol>
-    </section>
+   <section class="p-8 mx-5 bg-white rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 inline-block">Projects</h2>
 
-    <section>
+  <div class="space-y-6">
+    <!-- Project 1 -->
+    <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+      <h3 class="text-xl font-semibold text-blue-600">STUDENT MANAGEMENT SYSTEM <span class="text-sm text-gray-500">(Jan 2023 – Mar 2023)</span></h3>
+      <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+        <li>Automated student data management using Python.</li>
+        <li>Implemented student registration, update, delete, and search functionalities.</li>
+        <li>Added attendance tracking and grade analysis modules.</li>
+      </ul>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+      <h3 class="text-xl font-semibold text-blue-600">HOUSING PRICE PREDICTION <span class="text-sm text-gray-500">(Jan 2024 – Feb 2024)</span></h3>
+      <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+        <li>Used regression models (Linear, Lasso, Ridge, XGBoost) for price prediction.</li>
+        <li>Handled missing values, outliers, and performed EDA.</li>
+        <li>Visualized results using Matplotlib and Seaborn.</li>
+      </ul>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+      <h3 class="text-xl font-semibold text-blue-600">STOCK PREDICTOR – MACHINE LEARNING FORECASTING <span class="text-sm text-gray-500">(Feb 2024 – Present)</span></h3>
+      <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+        <li>Forecasting stock prices using ML and time series analysis.</li>
+        <li>Working on data preprocessing and trend analysis.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="p-6 mx-5 bg-white rounded-xl shadow-md mb-8">
       <h2>Qualification</h2>
-      <table>
+      <table class="w-full border border-gray-300">
         <thead>
           <tr>
-            <th>Standard</th>
-            <th>Institute</th>
-            <th>Marks</th>
-            <th>Passing Year</th>
+            <th class="bg-blue-500 text-white p-2">Standard</th>
+            <th class="bg-blue-500 text-white p-2">Institute</th>
+            <th class="bg-blue-500 text-white p-2">Marks</th>
+            <th class="bg-blue-500 text-white p-2">Passing Year</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>10</td>
-            <td>TM International School, Bharatpur (Raj.)</td>
-            <td>95.4%</td>
-            <td>2020</td>
+            <td class="border p-2 text-center">10</td>
+            <td class="border p-2 text-center">TM International School, Bharatpur (Raj.)</td>
+            <td class="border p-2 text-center">95.4%</td>
+            <td class="border p-2 text-center">2020</td>
           </tr>
           <tr>
-            <td>12</td>
-            <td>TM International School, Bharatpur (Raj.)</td>
-            <td>91%</td>
-            <td>2022</td>
+            <td class="border p-2 text-center">12</td>
+            <td class="border p-2 text-center">TM International School, Bharatpur (Raj.)</td>
+            <td class="border p-2 text-center">91%</td>
+            <td class="border p-2 text-center">2022</td>
           </tr>
           <tr>
-            <td>B.Tech</td>
-            <td>Chandigarh University</td>
-            <td>8.7 GPA</td>
-            <td>2027</td>
+            <td class="border p-2 text-center">B.Tech</td>
+            <td class="border p-2 text-center">Chandigarh University</td>
+            <td class="border p-2 text-center">8.7 GPA</td>
+            <td class="border p-2 text-center">2027</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <section>
+    <section class="p-6 mx-5 bg-white rounded-xl shadow-md mb-8">
       <h2>Contact Me</h2>
-      <form action="script.js" method="post">
+      <form action="script.js" method="post" class="max-w-md mx-auto">
         <label for="name">Enter your name:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" required class="w-full p-2 mb-4 border rounded-lg" />
 
         <label for="email">Enter your email:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required class="w-full p-2 mb-4 border rounded-lg" />
 
         <label for="feedback">Enter your feedback:</label>
-        <textarea id="feedback" name="feedback" rows="6" placeholder="Please give your feedback..." required></textarea>
+        <textarea id="feedback" name="feedback" rows="6" placeholder="Please give your feedback..." required class="w-full p-2 mb-4 border rounded-lg"></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Submit</button>
       </form>
     </section>
   </main>
 
-  <footer>
+  <footer class="text-center p-4 bg-blue-400 text-white">
     <p>&copy; 2019 Devendra Singh. All Rights Reserved.</p>
   </footer>
 
